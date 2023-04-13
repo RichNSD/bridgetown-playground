@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.note {
+	color: adjust-color($text-color-base, $lightness: 75%);
+	margin: 10px;
+	padding: $note-padding;
+	border-radius: $note-border-radius;
+	border: $note-border;
+	box-shadow: $note-shadow;
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 5px;
+		font-family: "Red Hat Display", sans-serif;
+		font-weight: 500;
+	}
+
+	&.info {
+		background-color: $note-background;
+	}
+}

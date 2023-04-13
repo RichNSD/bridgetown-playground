@@ -1,0 +1,12 @@
+@import "../../fonts/font-imports.css";
+
+$body-font-family:		"Red Hat Text", sans-serif;
+$text-color-base:		hsla(0deg, 0%, 85%, 100%);
+
+
+//+ Notes
+$note-background: 		hsla(190, 75%, 50%, 0.2);
+$note-padding: 			5px 15px 5px 15px;
+$note-border-radius: 	10px;
+$note-border: 			3px hsla(0deg, 0%, 100%, 0.2) solid;
+$note-shadow: 			3px 3px 15px hsla(0, 0%, 0%, 0.8);

@@ -1,84 +1,42 @@
-:root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
+@import "../../fonts/font-imports.css";
+@import "/frontend/fonts/font-imports.css";
+@import "../../fonts/font-imports.css";
+.note {
+  color: white;
+  margin: 10px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  border: 3px hsla(0, 0%, 100%, 0.2) solid;
+  box-shadow: 3px 3px 15px hsla(0, 0%, 0%, 0.8);
+}
+.note h1, .note h2, .note h3, .note h4, .note h5, .note h6 {
+  margin-top: 5px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+.note.info {
+  background-color: hsla(190, 75%, 50%, 0.2);
 }
 
 body {
-  background: var(--body-background);
-  color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
-  font-size: 108%;
-  line-height: 1.5;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Red Hat Text", sans-serif;
+  color: hsl(0, 0%, 85%);
 }
 
-a {
-  color: var(--action-color);
-  text-decoration: underline;
-  text-decoration-color: #ffb088;
-}
-
-h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  line-height: 1.2;
-}
-
-body > header {
-  margin: 1rem;
-  text-align: center;
-}
-
-body > header img {
-  display: inline-block;
-  width: 400px;
-  max-width: 100%;
-}
-
-body > nav ul {
-  margin: 2rem 0;
-  padding: 0;
-  list-style-type: none;
+.main-container {
+  position: relative;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
+  background-color: hsl(210, 50%, 12%);
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px hsla(0, 0%, 0%, 0.8);
 }
-
-body > nav a {
-  text-decoration: none;
-}
-
-main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
-
-  @media (max-width: 500px) {
-    padding: 16px 16px 50px;
-  }
-}
-
-footer {
-  text-align: center;
-  margin-bottom: 4rem;
-  font-size: 1em;
-}
-
-hr {
-  border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
-}
+.main-container h1, .main-container h2, .main-container h3, .main-container h4, .main-container h5, .main-container h6 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: default;
+}/*# sourceMappingURL=index.css.map */

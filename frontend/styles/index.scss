@@ -1,0 +1,29 @@
+@use "./_sass/_components/_notes.scss";
+@import "/frontend/fonts/font-imports.css";
+@import "./_sass/variables.scss";
+
+body {
+	background-color: hsla(0deg, 00%, 8%, 100%);
+	font-family: $body-font-family;
+	color: $text-color-base;
+}
+
+.main-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	background-color: hsla(210deg, 50%, 12%, 100%);
+	border-radius: 10px;
+	box-shadow: $note-shadow;
+	//align-items: center;
+	//justify-content: center;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Red Hat Display", sans-serif;
+		font-weight: 600;
+		font-size: default;
+	}
+}
