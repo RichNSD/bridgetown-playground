@@ -1,4 +1,4 @@
-import "index.css"
+import "index.scss"
 import "syntax-highlighting.css"
 
 // Import all JavaScript & CSS files from src/_components
