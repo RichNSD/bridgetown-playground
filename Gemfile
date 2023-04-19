@@ -13,8 +13,4 @@ gem "nokogiri", "~> 1.13"
 group :bridgetown_plugins do
 	gem "bridgetown-seo-tag", "~> 6.0"
 	gem "bridgetown-sitemap", "~> 2.0"
-	# gem "bridgetown-remote-theme", "~> 1.0"
-	# gem "bridgetown-asset-pipeline", "~> 1.0"
-	# gem "bridgetown-amp", "~> 1.0"
-	# gem "bridgetown-embed", "~> 1.0"
 end
