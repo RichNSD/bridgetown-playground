@@ -1,7 +1,22 @@
 @import "../../fonts/font-imports.css";
 
+#vars {
+	.dark {
+		$background-color: hsl(210, 50%, 10%);
+		$text-color: hsl(210, 30%, 80%);
+		$heading-color: hsl(210, 75%, 75%);
+		$action-color: hsl(20, 100%, 77%);
+		$action-color-hover: hsl(18, 100%, 72%);
+		$action-color-active: hsl(20, 100%, 62%);
+		$action-color-visited: hsl(20, 100%, 62%);
+		$action-color-focus: hsl(20, 100%, 62%);
+	}
+}
+
 $body-font-family:		"Red Hat Text", sans-serif;
-$text-color-base:		hsla(0deg, 0%, 85%, 100%);
+$heading-font-family:	"Red Hat Display", sans-serif;
+$code-font-family:		"Fira Code", monospace;
+
 
 
 //+ Notes

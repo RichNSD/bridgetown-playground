@@ -1,2 +1,20 @@
-@use 'variables'
+@use 'variables' as *;
 
+$themes: (
+	darkTheme: (
+		'bg-color': hsl(210, 50%, 10%),
+	)
+	lightTheme: (
+		'bg-color': hsl(210, 50%, 80%),
+	)
+)
+
+
+@mixin theme() {
+	@each $theme, $map, in $themes {
+		$theme: darkTheme, lightTheme;
+		$map: (
+			'bg-color': theme-get($theme, 'bg-color');
+		)
+	}
+}
