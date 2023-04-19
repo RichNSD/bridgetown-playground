@@ -1,20 +1,41 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 $themes: (
-	darkTheme: (
-		'bg-color': hsl(210, 50%, 10%),
-	)
-	lightTheme: (
-		'bg-color': hsl(210, 50%, 80%),
-	)
-)
-
+    darkTheme: (
+        "bg-color"              : hsl(210, 50%, 10%),
+        "base-cont-color"       : hsl(210, 50%, 15%),
+        "text-color"            : hsl(210, 30%, 80%),
+        "heading-color"         : hsl(18, 100%, 72%),
+        "subheading-color"      : hsl(210, 75%, 75%),
+        "action-color"          : hsl(20, 100%, 77%),
+        "action-color-hover"    : hsl(18, 100%, 72%),
+        "action-color-active"   : hsl(20, 100%, 62%),
+        "action-color-visited"  : hsl(20, 100%, 62%),
+        "action-color-focus"    : hsl(20, 100%, 62%),
+    )
+    lightTheme:
+    (
+        "bg-color"              : hsl(210, 50%, 80%),
+        "text-color"            : hsl(210, 30%, 80%),
+        "heading-color"         : hsl(18, 100%, 72%),
+        "subheading-color"      : hsl(210, 75%, 75%),
+        "action-color"          : hsl(20, 100%, 77%),
+        "action-color-hover"    : hsl(18, 100%, 72%),
+        "action-color-active"   : hsl(20, 100%, 62%),
+        "action-color-visited"  : hsl(20, 100%, 62%),
+        "action-color-focus"    : hsl(20, 100%, 62%),
+    ),
+);
 
 @mixin theme() {
-	@each $theme, $map, in $themes {
-		$theme: darkTheme, lightTheme;
-		$map: (
-			'bg-color': theme-get($theme, 'bg-color');
-		)
-	}
+    @each $theme, $map in $themes {
+        $theme-map: $map;
+		.#{$theme} {
+			@content;
+		}
+    }
+}
+
+@function theme-get($key) {
+    @return map-get($theme-map, $key);
 }

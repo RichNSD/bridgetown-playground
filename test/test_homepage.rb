@@ -1,3 +1,4 @@
+require "appmap/minitest"
 require_relative "./helper"
 
 class TestHomepage < Minitest::Test

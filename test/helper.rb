@@ -1,3 +1,4 @@
+require "appmap/minitest"
 require "nokogiri"
 require "minitest/autorun"
 require "minitest/reporters"
