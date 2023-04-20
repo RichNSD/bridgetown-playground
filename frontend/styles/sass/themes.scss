@@ -12,9 +12,8 @@ $themes: (
         "action-color-active"   : hsl(20, 100%, 62%),
         "action-color-visited"  : hsl(20, 100%, 62%),
         "action-color-focus"    : hsl(20, 100%, 62%),
-    )
-    lightTheme:
-    (
+    ),
+    lightTheme: (
         "bg-color"              : hsl(210, 50%, 80%),
         "text-color"            : hsl(210, 30%, 80%),
         "heading-color"         : hsl(18, 100%, 72%),
@@ -24,7 +23,7 @@ $themes: (
         "action-color-active"   : hsl(20, 100%, 62%),
         "action-color-visited"  : hsl(20, 100%, 62%),
         "action-color-focus"    : hsl(20, 100%, 62%),
-    ),
+    )
 );
 
 @mixin theme() {

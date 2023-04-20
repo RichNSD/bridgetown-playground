@@ -17,7 +17,7 @@ end
 
 
 group :test, optional: true do
-  gem "nokogiri", "~> 1.14"
+    # gem "nokogiri", "~> 1.14"
   gem "minitest", "~> 5.18"
   gem "minitest-profile"
   gem "minitest-reporters", "~> 1.6"

@@ -1,7 +1,7 @@
 import "index.scss"
-import "./plugins/prism.js"
-import "prism.css"
-// import "syntax-highlighting.css"
+//import "./plugins/prism.js"
+//import "prism.css"
+import "syntax-highlighting.css"
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
