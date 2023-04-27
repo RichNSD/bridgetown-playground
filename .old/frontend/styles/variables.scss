@@ -1,0 +1,52 @@
+@import "../../fonts/font-imports.css";
+
+//+ Text
+	//? Body text
+	$body-font-family:		"Red Hat Text", sans-serif;
+	$body-font-size:		1rem;		//? 16px
+	$body-line-height:		1.5;		//? 24px
+
+	//? Heading text
+	$heading-font-family:	"Red Hat Display", sans-serif;
+	$heading-base-size:		1.25rem;	//? 20px (H6)
+	$heading-scale:			0.25;		//? +0.25rem (4px) per heading level
+
+	//? Code text
+	$code-font-family:		"Fira Code", monospace;
+	$code-font-size:		0.75rem;	//? 12px
+	$code-line-height:		1.75;		//? 18px
+	$terminal-font-size:	1rem;		//? 16px
+	$terminal-line-height:	1;			//? 16px
+
+
+//+ Shadows
+	//? Text shadows
+	$text-shadow:			0 0 3px hsla(0, 0%, 0%, 0.5);
+	$header-shadow:			1 1 5px hsla(0, 0%, 0%, 0.75);
+	
+	//? Box shadows
+	$main-cont-shadow:		2 2 6px hsla(0, 0%, 0%, 0.75);
+	$base-div-shadow:		1 1 3px hsla(0, 0%, 0%, 0.75);
+	$code-block-shadow:		3 3 8px hsla(0, 0%, 0%, 0.75) inset;
+	$terminal-shadow:		3 3 8px hsla(0, 0%, 0%, 0.75) inset;
+
+
+
+
+//+ Container Definitions
+	//? Base settings
+	$base-border-radius:	10px;
+	$base-border-width:		3px;
+	$base-border-color:		hsla(0, 0%, 0%, 0.5);
+	$base-margin:			1.25rem;	//? 20px
+	$base-padding:			0.75rem;	//? 12px
+
+
+
+
+//+ Notes
+$note-background: 		hsla(190, 75%, 50%, 0.2);
+$note-padding: 			5px 15px 5px 15px;
+$note-border-radius: 	10px;
+$note-border: 			3px hsla(0deg, 0%, 100%, 0.2) solid;
+$note-shadow: 			3px 3px 15px hsla(0, 0%, 0%, 0.8);
