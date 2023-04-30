@@ -3,10 +3,12 @@
 
 
 body {
-    @include themes($theme) {
+    background-color: $darkTheme('bg-color');
+    color: $darkTheme('text-color');
+   /*  @include themes($theme) {
         background-color: $darkTheme('bg-color');
         color: $darkTheme('text-color');
-    }
+    } */
     font-family: $body-font-family;
     font-size: $body-font-size;
     line-height: $body-line-height;
