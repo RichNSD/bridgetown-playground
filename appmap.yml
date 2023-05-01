@@ -1,0 +1,6 @@
+---
+name: bridgetown-playground
+language: ruby
+appmap_dir: tmp/appmap
+packages: []
+exclude: []

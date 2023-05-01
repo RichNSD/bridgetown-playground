@@ -3,15 +3,16 @@
 
 
 body {
-    background-color: $darkTheme('bg-color');
-    color: $darkTheme('text-color');
-   /*  @include themes($theme) {
-        background-color: $darkTheme('bg-color');
-        color: $darkTheme('text-color');
-    } */
+    background-color: theme-get('bg-color');
+    color: theme-get('text-color');
     font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: $body-line-height;
+    font-size: inherit;
+    line-height: 1.5;
+    border-radius: $base-border-radius;
+    border: $base-border-width $base-border-color solid;
+    box-shadow: $main-cont-shadow;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 

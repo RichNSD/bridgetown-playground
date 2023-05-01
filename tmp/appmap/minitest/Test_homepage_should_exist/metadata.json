@@ -1,0 +1,45 @@
+{
+  "app": "bridgetown-playground",
+  "language": {
+    "name": "ruby",
+    "engine": "ruby",
+    "version": "3.0.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-ruby",
+    "version": "0.99.0"
+  },
+  "git": {
+    "repository": "https://github.com/RichNSD/bridgetown-playground.git",
+    "branch": "main",
+    "commit": "7f76e2ab2c9d8f6d77484d5c84bbf944557439e6",
+    "status": [
+      "D .old/frontend/styles/themes.scss",
+      "D .old/frontend/styles/variables.scss",
+      "M frontend/styles/index.scss",
+      "M package-lock.json",
+      "M package.json",
+      "M yarn.lock",
+      "?? .old/frontend/styles/sass/",
+      "?? appmap.yml"
+    ],
+    "git_last_annotated_tag": null,
+    "git_last_tag": null,
+    "git_commits_since_last_annotated_tag": null,
+    "git_commits_since_last_tag": null
+  },
+  "name": "Test : homepage should exist. ",
+  "source_location": "test/test_homepage.rb:11",
+  "frameworks": [
+    {
+      "name": "minitest",
+      "version": "5.18.0"
+    }
+  ],
+  "recorder": {
+    "name": "minitest",
+    "type": "tests"
+  },
+  "test_status": "succeeded"
+}
