@@ -17,7 +17,9 @@ body {
 
 
 @for $i from 1 through 6 {
-    $heading-font-size: $heading-base-size + $heading-scale * (6 - $i);
+    $heading-font-size: calc(
+		$heading-base-size + $heading-scale * (6 - $i)
+		);
     h#{$i} {
         font-size: $heading-font-size;
     }
